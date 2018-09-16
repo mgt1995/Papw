@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Local css-->
+    <link rel="stylesheet" type="text/css" href="Styles/Profile.css">
+    <script type="text/javascript" src="Javascript/Profile.js"></script>
+  <title>Store</title>
+</head>
+<body>
+<!--NAVIGATION BAR-->
+
+<div id="nav">
+  <ul>
+    <li id="topNavigationList"><a href="Home.html" >Home</a></li>
+    <!-- Button to open the modal login form -->
+    <li id="prof" onclick="document.getElementById('id01').style.display='block'"><a href="#" >Log In</a></li>
+    <li id="bag"><a href="Profile.html"><img src="images/UserXL.png" width="30" height="30"></a></li>
+    <li id="bag"><a href="Bag.html"><img src="images/Bag.png"></a></li> 
+  </ul> 
+</div>
+<!-------------------------------------------SEARCH BAR---------------------------------------------->
+<div>
+  <form action="Search-Page.html">
+    <div id="SearchBar"class="controls row center"> 
+      <div class="col-sm-3">
+        <select id="selCategories"class="form-control" name="Categories" placeholder="Categories">
+          <option value="Electronics">Electronics</option>
+          <option value="Gardening">Gardening</option>
+          <option value="Kitchen">Kitchen</option>
+          <option value="Clothing">Clothing</option>
+        </select> 
+      </div>
+      <div class="col-sm-6">
+        <input id="searchItem" type="text" name="searchItem" class="form-control"placeholder="Search:">
+      </div>
+      <div class="col-sx-2">
+        <button id="btnsearch"  class="form-control" >Search</button>
+      </div>
+    </div>
+  </form>
+</div>
+<!-------------------------------------------/SEARCH BAR---------------------------------------------->
+<!-------------------------------------------PAGE CONTENT---------------------------------------------->
+
+<div id="imagesContainer"class="container-fluid" >
+ <div class="row">
+    <div class="col-12 d-flex justify-content-center">  
+      <!--  Imagen de Portada -->
+      <div class="coverpic d-flex justify-content-center">
+        <img src="images/CoverXL.png" style="height: 100%; width: 100%; object-fit: cover;">
+      </div>
+      <!-- Imagen de Perfil -->
+      <div class="profilepic">
+        <img src="images/UserXL.png" >
+      </div>
+    </div>        
+  </div>      
+</div>
+
+
+<div  id="navProfile"class="container">
+  <nav class="card">
+    <ul>
+      <li><a  onclick="myFunction('profileContainer') ">Profile</a></li>
+      <li><a  onclick="myFunction('historyContainer') ">Purchase History</a></li>
+      <li><a  onclick="myFunction('soldContainer') ">Your Items on Sale</a></li>
+      <li><a  onclick="myFunction('draftContainer') ">Drafts</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+<!--------------------------------------------/PURCHASE HISTORY------------------------------------------------>
+<div id="historyContainer" class="container" style="display: none;">
+  <h4 class="text-center">Purchase History</h4>
+   <hr>
+  <div  class="row mt-1">
+            
+    <!--Image-->
+    <div class="col-md-3" >
+      <a href="#">
+        <img class="img-fluid  mb-3 mb-md-0 img-center center-block" src="images/noProductImage.png" width="150" height="150" >
+      </a>
+    </div>
+    <!--Info-->
+    <div class="col">
+      
+      <h3>Product</h3>
+      <p>Shipping address: </p>
+      <p>--Address--</p>
+      <p>Purchase date: 9/13/18</p>
+      
+    </div>
+    <div class="col-md-3">
+      
+      <h5>Price</h5>
+      <h1>$100.00 </h1>
+      <p>The rating you gave:</p>
+      <a class="btn btn-primary" href="#">View Item</a>
+    </div>
+  </div>
+  <hr>
+
+  <div  class="row mt-1">
+            
+    <!--Image-->
+    <div class="col-md-3" >
+      <a href="#">
+        <img class="img-fluid  mb-3 mb-md-0 img-center center-block" src="images/noProductImage.png" width="150" height="150" >
+      </a>
+    </div>
+    <!--Info-->
+    <div class="col">
+      
+      <h3>Product</h3>
+      <p>Shipping address: </p>
+      <p>--Address--</p>
+      <p>Purchase date: 9/13/18</p>
+      
+    </div>
+    <div class="col-md-3">
+      
+      <h5>Price</h5>
+      <h1>$100.00 </h1>
+      <p>The rating you gave:</p>
+      <a class="btn btn-primary" href="#">View Item</a>
+    </div>
+  </div>
+  <hr>
+
+  <div  class="row mt-1">
+            
+    <!--Image-->
+    <div class="col-md-3" >
+      <a href="#">
+        <img class="img-fluid  mb-3 mb-md-0 img-center center-block" src="images/noProductImage.png" width="150" height="150" >
+      </a>
+    </div>
+    <!--Info-->
+    <div class="col">
+      
+      <h3>Product</h3>
+      <p>Shipping address: </p>
+      <p>--Address--</p>
+      <p>Purchase date: 9/13/18</p>
+      
+    </div>
+    <div class="col-md-3">
+      
+      <h5>Price</h5>
+      <h1>$100.00 </h1>
+      <p>The rating you gave:</p>
+      <a class="btn btn-primary" href="#">View Item</a>
+    </div>
+  </div>
+  <hr>
+</div>
+<!--------------------------------------------/PURCHASE HISTORY------------------------------------------------>
+<!--------------------------------------------SOLD ITEMS------------------------------------------------>
+<div id="soldContainer" class="container" style="display: none;">
+  <div class="row">
+    <div id="first" class="col text-center" style="float:right;">
+        <h4>Your Items on Sale</h4>
+      <a class="btn btn-primary" href="Item-Publication.html">Add Item</a>
+     </div>
+  </div>
+   <hr>
+
+ 
+ <div  class="row mt-1">
+            
+    <!--Image-->
+    <div class="col-md-3" >
+      <a href="#">
+        <img class="img-fluid  mb-3 mb-md-0 img-center center-block" src="images/noProductImage.png" width="150" height="150" >
+      </a>
+    </div>
+    <!--Info-->
+    <div class="col">
+      
+      <h3>Product</h3>
+      <p>Product details: </p>
+      <p>Publication date:8/13/18</p>
+      
+    </div>
+    <div class="col-md-3">
+      
+      <h5>Price</h5>
+      <h1>$100.00 </h1>
+         <p>Quantity left: </p>
+        <div style="display: inline;">
+        <a class="btn btn-primary" href="#">View Item</a><a class="btn btn-primary" href="Item-Publication-Edit.html" 
+        style="margin-left: 10px;">Edit Item</a>
+        <img src="images/Delete.png" id="btnDelete"style="margin-left: 5px;" width="30" height="30" >
+        </div>
+    </div>
+  </div>
+  <hr>
+
+ <div  class="row mt-1">
+            
+    <!--Image-->
+    <div class="col-md-3" >
+      <a href="#">
+        <img class="img-fluid  mb-3 mb-md-0 img-center center-block" src="images/noProductImage.png" width="150" height="150" >
+      </a>
+    </div>
+    <!--Info-->
+    <div class="col">
+      
+      <h3>Product</h3>
+      <p>Product details: </p>
+      <p>Publication date:8/13/18</p>
+      
+    </div>
+    <div class="col-md-3">
+      
+      <h5>Price</h5>
+      <h1>$100.00 </h1>
+         <p>Quantity left: </p>
+        <div style="display: inline;">
+        <a class="btn btn-primary" href="#">View Item</a><a class="btn btn-primary" href="Item-Publication-Edit.html"
+         style="margin-left: 10px;">Edit Item</a>
+        <img src="images/Delete.png" id="btnDelete"style="margin-left: 5px;" width="30" height="30" >
+        </div>
+    </div>
+  </div>
+  <hr>
+</div>
+<!-------------------------------------------/SOLD ITEMS------------------------------------------------>
+
+<!---------------------------------------------DRAFTS--------------------------------------------------->
+<div id="draftContainer" class="container" style="display: none;">
+ <h4 class="text-center">Drafts</h4>
+   <hr>
+ <div  class="row mt-1">
+            
+    <!--Image-->
+    <div class="col-md-3" >
+      <a href="#">
+        <img class="img-fluid  mb-3 mb-md-0 img-center center-block" src="images/noProductImage.png" width="150" height="150" >
+      </a>
+    </div>
+    <!--Info-->
+    <div class="col">
+      
+      <h3>Product</h3>
+      <p>Product details: </p>      
+    </div>
+    <div class="col-md-3">
+      
+      <h5>Price</h5>
+      <h1>$100.00 </h1>
+         <p>Quantity left: </p>
+        <div style="display: inline;">
+        <a class="btn btn-primary" href="#">Publish</a><a class="btn btn-primary" href="#" style="margin-left: 10px;">Edit Item</a>
+        </div>
+    </div>
+  </div>
+  <hr>
+</div>
+<!---------------------------------------------/DRAFTS-------------------------------------------------->
+
+<!---------------------------------------------PROFILE-------------------------------------------------->
+<div id="profileContainer" class="container" style="display: block;">
+ <h4 class="text-center">Profile</h4>
+   <hr>
+  <form>
+    <div class="form-row">
+      <div class="form-group col">
+        <label for="inputEmail4">Name</label>
+        <input type="name" class="form-control" id="inputEmail4" placeholder="Email" readonly="" >
+      </div>
+      <div class="form-group col">
+        <label for="inputEmail4">Last name</label>
+        <input type="last" class="form-control" id="inputEmail4" placeholder="Email" readonly="">
+      </div>
+      <div class="form-group col">
+        <label for="inputEmail4">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Email"readonly="">
+      </div>
+        
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" readonly="">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-">
+        <label for="inputCity">City</label>
+        <input type="text" class="form-control" id="inputCity" readonly="">
+      </div>
+      <div class="form-group col" style="margin-left: 50px;">
+        <label for="inputState">State</label>
+        <select id="inputState" class="form-control" readonly="">
+          <option selected>Choose...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="form-group col">
+        <label for="inputZip">Zip</label>
+        <input type="text" class="form-control" id="inputZip" readonly="">
+      </div>
+    </div>
+
+    <p><a href="#">Change password?</a></p>
+    <button type="submit" class="btn btn-primary">Edit</button>
+  </form>
+  <hr>
+</div>
+<!---------------------------------------------/PROFILE------------------------------------------------->
+
+<!-------------------------------------------/PAGE CONTENT---------------------------------------------->
+<!---------------------------------------------LOGIN FORM----------------------------------------------->
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" 
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="images/UserXL.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit form-control">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me</label>
+       <div>
+      	<button  onclick="document.getElementById('id01').style.display='none'" class="form-control cancelbtn">Cancel</button>
+
+      	<span>Forgot <a href="#">password?</a> <a href="Register.html">Sign Up</a></span>
+       </div>
+    </div>
+
+   
+  </form>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<!---------------------------------------------/LOGIN FORM----------------------------------------------->
+
+
+<!--------------------------------------------------FOOTER----------------------------------------------->
+<footer id="foot" class="py-5">
+      <div class="container">
+        <p  class="m-0 text-center text-white">PAPW</p>
+      </div>
+</footer>
+<!-------------------------------------------------/FOOTER----------------------------------------------->
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>

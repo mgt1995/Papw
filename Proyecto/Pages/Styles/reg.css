@@ -1,0 +1,105 @@
+/*-------------------------------------------------Navigation and Footer----------------------------------------------- */
+body, html{
+	
+     height: 100%;
+}
+
+#nav{
+    width: =100%;
+    margin:0;
+    padding:0;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #04151F;
+}
+
+#nav li {
+    float: left;
+}
+
+#nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Catamaran;
+}
+@font-face{
+    font-family: Catamaran;
+    src: url("Fonts/Catamaran-SemiBold.ttf");
+    
+}
+@font-face{
+    font-family: Catamaran-Light;
+    src: url("Fonts/Catamaran-Light.ttf");
+}
+/* Change the link color to #313F47  on hover */
+#nav li a:hover {
+    background-color: #313F47;
+}
+#nav #prof, #nav #bag{
+    float:right;
+}
+#foot{
+    background-color: #04151F;
+    font-family: Catamaran-Light;
+    font-size: 15px;
+}
+/*-------------------------------------------------Sign Up Form----------------------------------------------- */
+
+#my-6{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#cardRegTitle
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    font-family: Catamaran;
+    font-size: 20px;
+}
+
+#cardReg{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    font-family: Catamaran-Light;
+    font-size: 15px;
+}
+
+#continerBackground{
+    margin-top: 50px;
+    margin-bottom: 75px;
+    margin-left: 350px;
+    max-width: 815px;
+    
+    background-image: url('images/BackReg.png');
+}
+
+.card{
+    background-color: #DCB149;
+    border-color: #DCB149;
+}
+.form-control{
+    border-color: #EBD39A;
+    background-color: #EBD39A;
+}
+    
+#dirProfile{
+    width: 300px;
+}    
+#fileProf{
+    width: 50px;
+    height: 50px;
+    background-image: url('images/btnFile.png');
+}
+.form-control::-moz-placeholder { color: rgb(26,42,51); opacity: 0.8; }  /* Mozilla Firefox 19+ */
+.form-control::-webkit-input-placeholder { color: rgb(95,106,112); }  /* WebKit, Blink, Edge */

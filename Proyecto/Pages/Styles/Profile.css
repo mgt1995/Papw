@@ -1,0 +1,300 @@
+/*-------------------------------------------------Navigation and Footer----------------------------------------------- */
+body, html{
+	
+    
+    background-color: #EFF9F0;
+    overflow-x: hidden;
+}
+
+#nav{
+    width: =100%;
+    margin:0;
+    padding:0;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #04151F;
+}
+
+#nav li {
+    float: left;
+}
+#topNavigationList:first-child{
+    float: left;
+     margin-left: 50px;
+}
+
+#nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Catamaran;
+}
+@font-face{
+    font-family: Catamaran;
+    src: url("Fonts/Catamaran-SemiBold.ttf");
+    
+}
+@font-face{
+    font-family: Catamaran-Light;
+    src: url("Fonts/Catamaran-Light.ttf");
+}
+/* Change the link color to #313F47  on hover */
+#nav li a:hover {
+    background-color: #313F47;
+}
+#nav #prof, #nav #bag{
+    float:right;
+}
+#foot{
+    background-color: #04151F;
+    font-family: Catamaran-Light;
+    font-size: 15px;
+
+}
+#SearchBar{
+    margin-left:200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+/*---------------------------------------------E.T. GO HOME-----------------------------------------------------------*/
+#navProfile{
+    width: =100%;
+    margin:200;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#navProfile .card{
+    background-color: #DAE3DB;
+    border: none;
+    height: 50px; 
+}
+#navProfile ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+#navProfile li {
+    float: left;
+    padding-left: 200px;
+}
+#navProfile li:first-child {
+    float: left;
+    padding-left: 0px;
+}
+#navProfile li a {
+    display: block;
+    color: #1B2528;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Catamaran;
+}
+#navProfile li a:hover {
+    background-color: #505759;
+}
+
+:root{
+    --prof-ms: 150px;
+    --covpic-ms: 100%;
+    --covpic-hms: 250px;
+}
+
+body .profilepic{
+    min-width: var(--prof-ms);
+    max-width: var(--prof-ms);
+    min-height: var(--prof-ms);
+    max-height: var(--prof-ms);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #EFF9F0;
+    position: absolute;
+    top: 50px;
+    left: 25px;
+}
+
+body .profilepic img{
+    width: 100%;
+}
+
+body .coverpic{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #EFF9F0;
+    position: relative;
+
+}
+
+#imagesContainer{
+    max-width: 1140px;
+     align-items: center;"
+}
+#profileContainer,#draftContainer,#soldContainer,#historyContainer
+{
+    padding-top: 25px;
+    max-width: 1108px;
+    align-items: center;
+    color: #1A2A33;
+    background-color: #DAE3DB;
+}
+#profileContainer .btn,#draftContainer .btn ,#soldContainer .btn, #historyContainer .btn{
+    height: 30px;
+    padding-top: 0px;
+    background-color: #1A2A33;
+    border-color:#141A1C;
+}
+
+#draftContainer .img-center,#soldContainer .img-center,#historyContainer .img-center {
+    display: block;
+    margin: 0 auto;
+}
+#profileContainer .form-control{
+    width: 300px;
+    border:none;
+}
+#profileContainer input:-moz-read-only { /* For Firefox */
+    background-color: #EBD39A;
+}
+
+#profileContainer input:read-only { 
+    background-color: #EBD39A;
+}
+#first {
+    text-align: right;
+    display: inline;
+}
+
+/*----------------------------------------------LOGIN FORM------------------------------------------------------------*/
+    /* Full-width input fields */
+#id01 input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+#id01 button {
+    background-color: #1A2A33;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#id01 button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+#id01 .cancelbtn {
+    width: 150px;
+     padding: 0px 0px;
+    background-color: #DB3C1D;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #D5A021;
+    border: none;
+    margin: 0% auto 0% auto; /* 5% from the top, 15% from the bottom and centered */
+    width: 50%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #DAE3DB;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+.form-control::-moz-placeholder { color: rgb(26,42,51); opacity: 0.8; }  /* Mozilla Firefox 19+ */
+.form-control::-webkit-input-placeholder { color: rgb(95,106,112); }  /* WebKit, Blink, Edge */
